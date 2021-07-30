@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.minesweeper">
+<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/minesweeper_home"
+        android:label="Escape the Bomb"
+        android:roundIcon="@drawable/minesweeper_home"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Minesweeper">
+        <activity android:name=".home_activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".choose_activity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".MainActivity2" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Mainactivity_easy" android:screenOrientation="portrait"></activity>
+        <activity android:name=".choose_practice_activity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".MainActivity_timer" android:screenOrientation="portrait"></activity>
+        <activity android:name=".choose_activity_timer" android:screenOrientation="portrait"></activity>
+        <activity android:name=".MainActivity_startmode" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

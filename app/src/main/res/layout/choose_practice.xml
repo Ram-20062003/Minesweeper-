@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="404dp"
+        android:layout_height="483dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/choice_practice">
+        <Button
+            android:id="@+id/fixed"
+            android:layout_width="99dp"
+            android:layout_height="144dp"
+            android:text="FIXED BOMBS"
+            android:textSize="15sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:fontFamily="@font/shojumaru"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.118"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.631" />
+        <Button
+            android:id="@+id/random_click"
+            android:layout_width="99dp"
+            android:layout_height="144dp"
+            android:text="RANDOM BOMBS"
+            android:textSize="15sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:fontFamily="@font/shojumaru"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.794"
+            app:layout_constraintStart_toEndOf="@+id/fixed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.631" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="402dp"
+            android:layout_height="58dp"
+            android:fontFamily="@font/fontdiner_swanky"
+            android:gravity="center"
+            android:text="SELECT PRACTICE TYPE"
+            android:textColor="#d9d4d5"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="145dp"
+            android:layout_height="74dp"
+            android:backgroundTint="#3b0c0c"
+            android:fontFamily="@font/shojumaru"
+            android:text="BACK"
+            android:textColor="#f70015"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.992" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
