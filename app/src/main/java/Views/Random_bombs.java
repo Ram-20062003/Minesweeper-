@@ -308,6 +308,5 @@ public class Random_bombs extends View {
           }
         }
 Log.d(TAG,"No .of .bombs="+s);
-
     }
 }
