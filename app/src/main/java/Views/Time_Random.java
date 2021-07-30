@@ -246,8 +246,13 @@ public class Time_Random extends View {
             }
             canvas.drawText("YOU LOST", (float) (getWidth()/5),2*getHeight()/5,paint_scoretext);
             paint_scoretext.setTextSize(55);
+            int m_remain=0,s_remain;
+            s_remain=60-seconds;
+            m_remain=5-minutes-1;
+            String time_run=String.format(Locale.getDefault(),"%02d:%02d",m_remain,s_remain);
+            Log.d(TAG,"TIme is :"+time_run);
             if(timer_run==0)
-                canvas.drawText("RUN TIME="+time,2*getWidth()/10,6*getHeight()/10,paint_scoretext);
+                canvas.drawText("RUN TIME="+time_run,2*getWidth()/10,6*getHeight()/10,paint_scoretext);
             canvas.drawText("TRY AGAIN!", (float) (2.5*getWidth()/10),9*getHeight()/20,paint_scoretext);
             canvas.drawText("SCORE="+String.valueOf(score), 2*getWidth()/10,getHeight()/2,paint_scoretext);
             canvas.drawText("HIGH SCORE="+sharedPreferences.getInt(text,0),2*getWidth()/10, (float) (5.5*getHeight()/10),paint_scoretext);
