@@ -184,7 +184,6 @@ public class Time_Random extends View {
                 canvas.drawText("EXPERT MODE",(120+w)/6,getHeight()/11,paint_highscore);
                 break;
         }
-
         if(k==3&&stop==0)
         {frect_xc[num]=g_x;
             frect_yc[num]=g_y;
