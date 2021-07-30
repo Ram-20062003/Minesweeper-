@@ -322,7 +322,6 @@ public class Easy_random extends View {
                     Intent intent=new Intent(getContext(),choose_activity.class);
                     getContext().startActivity(intent);
                 }
-
                 return true;
         }
         return  value;
