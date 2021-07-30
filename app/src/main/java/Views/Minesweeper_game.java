@@ -282,11 +282,9 @@ Vibrator v;
     }
 
     private void generate_number() {
-        for(int i=0;i<8;i++) {
-            for (int j = 0; j < 8; j++) {
-                k_val[i][j] = 3;
-            }
-        }
+        for(int i=0;i<8;i++)
+            for(int j=0;j<8;j++)
+                k_val[i][j]=3;
         k_val[0][2]=0;
         k_val[0][6]=0;
         k_val[1][1]=0;
