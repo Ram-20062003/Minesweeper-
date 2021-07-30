@@ -248,7 +248,11 @@ public class Time_Random extends View {
             paint_scoretext.setTextSize(55);
             int m_remain=0,s_remain;
             s_remain=60-seconds;
+            if(s_remain==60)
+                s_remain=0;
             m_remain=5-minutes-1;
+            if(s_remain==60)
+                m_remain=5-minutes;
             String time_run=String.format(Locale.getDefault(),"%02d:%02d",m_remain,s_remain);
             Log.d(TAG,"TIme is :"+time_run);
             if(timer_run==0)
